@@ -29,7 +29,7 @@
     </scm>
 
     <properties>
-        <revision>1.6.2</revision>
+        <revision>2.0.2</revision>
         <changelist>-SNAPSHOT</changelist>
         <jenkins.version>2.60.3</jenkins.version>
         <java.level>8</java.level>
@@ -37,9 +37,9 @@
         <jackson.version>2.10.1</jackson.version>
         <jetty.version>9.2.15.v20160210</jetty.version>
 
-        <azuresdk.version>1.19.0</azuresdk.version>
+        <azuresdk.version>1.31.0</azuresdk.version>
         <azure-commons.version>1.0.4</azure-commons.version>
-        <azure-keyvault.version>1.0.0</azure-keyvault.version>
+        <azure-keyvault.version>1.2.2</azure-keyvault.version>
     </properties>
 
     <licenses>
@@ -75,6 +75,21 @@
                     <artifactId>jaxb-api</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.microsoft.rest</groupId>
+            <artifactId>client-runtime</artifactId>
+            <version>1.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>retrofit</artifactId>
+            <version>2.6.2</version>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.9.9</version>
         </dependency>
         <dependency>
             <groupId>com.microsoft.azure</groupId>
@@ -118,7 +133,7 @@
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
-                <version>3.5</version>
+                <version>3.8.1</version>
             </dependency>
             <dependency>
                 <groupId>commons-codec</groupId>
@@ -141,14 +156,9 @@
                 <version>${jackson.version}</version>
             </dependency>
             <dependency>
-                <groupId>joda-time</groupId>
-                <artifactId>joda-time</artifactId>
-                <version>2.7</version>
-            </dependency>
-            <dependency>
                 <groupId>com.microsoft.azure</groupId>
                 <artifactId>azure-annotations</artifactId>
-                <version>1.8.0</version>
+                <version>1.10.0</version>
             </dependency>
             <dependency>
                 <groupId>com.google.code.gson</groupId>
